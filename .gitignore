@@ -113,3 +113,4 @@ tests/reports/math_validation/*
 tests/reports/*.html
 tests/reports/*.xml
 tests/reports/*.json
+.data_cache/

@@ -67,6 +67,13 @@ dev = [
     "pdoc3>=0.10.0,<1.0.0",
     "flake8>=4.0.0,<8.0.0"
 ]
+performance = [
+    "pyarrow>=10.0.0",
+    "duckdb>=0.8.0"
+]
+all = [
+    "strepsuis-mdr[dev,performance]"
+]
 
 [project.urls]
 Homepage = "https://github.com/MK-vet/strepsuis-mdr"
