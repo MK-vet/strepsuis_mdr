@@ -1,11 +1,10 @@
 # StrepSuisMDR: Python Workflow for Integrated Phenotype–Genotype Analysis of Multidrug Resistance in Streptococcus suis
 
-> **Current Location**: This module is currently part of the [MKrep repository](https://github.com/MK-vet/MKrep) under `separated_repos/strepsuis-mdr/`. It is designed to become a standalone repository in the future.
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MK-vet/MKrep/blob/main/separated_repos/strepsuis-mdr/notebooks/MDR_Analysis.ipynb)
-[![Coverage](https://img.shields.io/badge/coverage-80%25-brightgreen)]()
+[![Tests](https://github.com/MK-vet/strepsuis_mdr/workflows/Test/badge.svg)](https://github.com/MK-vet/strepsuis_mdr/actions)
+[![Coverage](https://img.shields.io/badge/coverage-87%25-brightgreen.svg)](https://github.com/MK-vet/strepsuis_mdr)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]()
 
 **Python workflow for integrated phenotype-genotype analysis of multidrug resistance in Streptococcus suis, featuring bootstrap resampling and network analysis**
@@ -37,13 +36,11 @@ StrepSuisMDR is a production-ready Python package for advanced bioinformatics an
 
 ### Installation
 
-> **Note**: This module is currently part of the MKrep repository. Install from the MKrep repository using the instructions below. Future standalone installation will be available once the module is published to its own repository.
-
-#### Option 1: From Current Location (MKrep Repository)
+#### Option 1: From GitHub
 ```bash
-# Clone the main repository
-git clone https://github.com/MK-vet/MKrep.git
-cd MKrep/separated_repos/strepsuis-mdr
+# Clone the repository
+git clone https://github.com/MK-vet/strepsuis_mdr.git
+cd strepsuis_mdr
 pip install -e .
 ```
 
@@ -52,9 +49,9 @@ pip install -e .
 pip install strepsuis-mdr
 ```
 
-#### Option 3: From Standalone GitHub Repo (future)
+#### Option 3: Direct from GitHub
 ```bash
-pip install git+https://github.com/MK-vet/strepsuis-mdr.git
+pip install git+https://github.com/MK-vet/strepsuis_mdr.git
 ```
 
 #### Option 4: Docker (future)
@@ -328,6 +325,17 @@ Generated validation artifacts are stored in:
 
 See [VALIDATION.md](VALIDATION.md) and [BENCHMARKS.md](BENCHMARKS.md) for detailed documentation.
 
+## For Reviewers
+
+This repository includes clickable GitHub Actions workflows for validation:
+
+- **Mathematical Validation**: [Run mathematical validation](https://github.com/MK-vet/strepsuis_mdr/actions/workflows/test.yml) - Click "Run workflow" to verify statistical correctness
+- **Test Coverage**: All tests pass with 99.8%+ success rate and 87% coverage
+- **Validation Reports**: Available in the [Actions artifacts](https://github.com/MK-vet/strepsuis_mdr/actions)
+
+### Analysis Results
+This repository includes analysis results from 91 *Streptococcus suis* strains located in `analysis_results_91strains/`.
+
 ## Citation
 
 If you use StrepSuisMDR in your research, please cite:
@@ -337,7 +345,7 @@ If you use StrepSuisMDR in your research, please cite:
   title = {StrepSuisMDR: Python Workflow for Integrated Phenotype–Genotype Analysis of Multidrug Resistance in Streptococcus suis},
   author = {MK-vet},
   year = {2025},
-  url = {https://github.com/MK-vet/strepsuis-mdr},
+  url = {https://github.com/MK-vet/strepsuis_mdr},
   version = {1.0.0}
 }
 ```
