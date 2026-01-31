@@ -1,0 +1,38 @@
+{
+  "title": "StrepSuis-MDR - Multidrug Resistance Pattern Analysis Tool",
+  "description": "Production-ready Python package for automated detection and analysis of antimicrobial resistance patterns in bacterial species. Implements bootstrap confidence intervals, multiple testing correction, association rule mining, and network-based visualization of co-resistance relationships.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "bioinformatics",
+    "genomics",
+    "python",
+    "bacterial-analysis",
+    "antimicrobial-resistance",
+    "mdr-analysis",
+    "statistical-analysis",
+    "network-analysis"
+  ],
+  "creators": [
+    {
+      "name": "Research Team",
+      "affiliation": "StrepSuis Suite Development Team"
+    }
+  ],
+  "version": "1.0.0",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/MK-vet/MKrep",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ]
+}

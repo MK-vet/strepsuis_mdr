@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-01-31T10:02:24.787317",
+  "total_tests": 7,
+  "passed": 7,
+  "consistency_checks": 7,
+  "consistent": 7,
+  "results": [
+    {
+      "test": "Chi-Square Consistency",
+      "expected": "scipy: 0.0000",
+      "actual": "manual: 0.0000",
+      "passed": true,
+      "details": "Same calculation method",
+      "modules": "all modules"
+    },
+    {
+      "test": "Phi Coefficient Consistency",
+      "expected": "from chi2: 0.0000",
+      "actual": "direct: 0.0000",
+      "passed": true,
+      "details": "Two calculation methods",
+      "modules": "mdr, amrvirkm, genphennet"
+    },
+    {
+      "test": "Bootstrap Reproducibility",
+      "expected": "CI1: [0.0000, 0.0000]",
+      "actual": "CI2: [0.0000, 0.0000]",
+      "passed": true,
+      "details": "Same seed should give same result",
+      "modules": "all modules"
+    },
+    {
+      "test": "FDR BH Consistency",
+      "expected": "statsmodels: [0.008      0.04       0.05333333]",
+      "actual": "manual: [0.008      0.04       0.05333333]",
+      "passed": true,
+      "details": "Benjamini-Hochberg correction",
+      "modules": "all modules"
+    },
+    {
+      "test": "Prevalence Calculation",
+      "expected": "mean: 0.00%",
+      "actual": "sum/count: 0.00%, vc: 0.00%",
+      "passed": true,
+      "details": "Three calculation methods",
+      "modules": "all modules"
+    },
+    {
+      "test": "Binary Data Type Handling",
+      "expected": "int: 0.0000",
+      "actual": "float: 0.0000, bool: 0.0000",
+      "passed": true,
+      "details": "Different data types",
+      "modules": "all modules"
+    },
+    {
+      "test": "Pearson Correlation",
+      "expected": "numpy: 0.0000",
+      "actual": "scipy: 0.0000, pandas: 0.0000",
+      "passed": true,
+      "details": "Three libraries",
+      "modules": "all modules"
+    }
+  ],
+  "consistency_checks_detail": [
+    {
+      "name": "Chi-Square Calculation",
+      "module1": "scipy (reference)",
+      "module2": "manual implementation",
+      "value1": "0.0000",
+      "value2": "0.0000",
+      "consistent": true,
+      "interpretation": "All modules should use consistent chi-square calculation."
+    },
+    {
+      "name": "Phi Coefficient",
+      "module1": "from chi-square",
+      "module2": "direct formula",
+      "value1": "0.0000",
+      "value2": "0.0000",
+      "consistent": true,
+      "interpretation": "Both methods should give same absolute phi value."
+    },
+    {
+      "name": "Bootstrap Reproducibility",
+      "module1": "Run 1 (seed=42)",
+      "module2": "Run 2 (seed=42)",
+      "value1": "[0.0000, 0.0000]",
+      "value2": "[0.0000, 0.0000]",
+      "consistent": true,
+      "interpretation": "Bootstrap should be reproducible with fixed random seed."
+    },
+    {
+      "name": "FDR Correction",
+      "module1": "statsmodels",
+      "module2": "manual BH",
+      "value1": "[0.008      0.04       0.05333333]",
+      "value2": "[0.008      0.04       0.05333333]",
+      "consistent": true,
+      "interpretation": "FDR correction should be consistent across implementations."
+    },
+    {
+      "name": "Prevalence Calculation",
+      "module1": "mean()",
+      "module2": "sum()/count()",
+      "value1": "0.0000%",
+      "value2": "0.0000%",
+      "consistent": true,
+      "interpretation": "All prevalence calculation methods should give identical results."
+    },
+    {
+      "name": "Data Type Handling",
+      "module1": "int",
+      "module2": "float/bool",
+      "value1": "0.0000",
+      "value2": "0.0000",
+      "consistent": true,
+      "interpretation": "Binary data should give same results regardless of type."
+    },
+    {
+      "name": "Pearson Correlation",
+      "module1": "numpy",
+      "module2": "scipy/pandas",
+      "value1": "0.0000",
+      "value2": "0.0000",
+      "consistent": true,
+      "interpretation": "Correlation should be identical across libraries."
+    }
+  ]
+}

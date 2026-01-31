@@ -1,0 +1,57 @@
+name: Documentation
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install pdoc3
+
+      - name: Generate API documentation
+        run: |
+          mkdir -p docs/api
+          pdoc --html --output-dir docs/api --force .
+
+      - name: Update README with latest examples
+        run: |
+          # Extract version from pyproject.toml
+          VERSION=$(grep -E '^version = ' pyproject.toml | cut -d'"' -f2)
+          echo "Version: $VERSION" > docs/version_info.txt
+          
+          # Update installation examples in README if needed
+          if grep -q "pip install git+" README.md; then
+            echo "README already contains installation examples"
+          else
+            echo "README needs updating with installation examples"
+          fi
+
+      - name: Create documentation archive
+        run: |
+          tar -czf documentation.tar.gz docs/
+
+      - name: Upload documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation
+          path: documentation.tar.gz
+          retention-days: 90

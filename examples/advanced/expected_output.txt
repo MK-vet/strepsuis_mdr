@@ -1,0 +1,22 @@
+Expected Analysis Results:
+
+This advanced example includes all data types and should complete in 5-8 minutes.
+
+Results will include:
+
+1. Comprehensive HTML Report:
+   - Complete statistical analysis
+   - Multiple visualization types
+   - Interactive data tables
+
+2. Detailed Excel Workbook:
+   - Multiple sheets with all data
+   - Statistical test results
+   - Metadata integration (MLST, Serotypes)
+
+3. Publication-Ready Charts:
+   - High-resolution PNG files
+   - Multiple chart types
+   - Professional formatting
+
+This example demonstrates all features and capabilities of the tool.

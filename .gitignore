@@ -1,0 +1,115 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.json
+coverage_*.json
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output files
+output/
+results/
+*.xlsx
+*.html
+png_charts/
+
+# Data files (keep examples and documentation)
+data/*
+!data/examples/
+!data/results/
+!data/README.md
+!data/*/README.md
+*.csv
+!data/examples/*.csv
+!examples/*.csv
+!synthetic_data/*.csv
+
+# Logs
+*.log
+
+# Keep README files in generated directories
+!analysis_results/README.md
+!test_reports/README.md
+!assets/README.md
+
+# Test reports (keep .gitkeep files)
+tests/reports/coverage/*
+!tests/reports/coverage/.gitkeep
+tests/reports/performance/*
+!tests/reports/performance/.gitkeep
+tests/reports/math_validation/*
+!tests/reports/math_validation/.gitkeep
+tests/reports/*.html
+tests/reports/*.xml
+tests/reports/*.json

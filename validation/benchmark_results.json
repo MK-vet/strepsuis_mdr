@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-01-31T10:02:24.784208",
+  "results": [
+    {
+      "operation": "Bootstrap CI",
+      "n_samples": 50,
+      "n_features": 10,
+      "time_seconds": 0.10320138931274414,
+      "memory_mb": null,
+      "throughput": 484.48960167075575
+    },
+    {
+      "operation": "Bootstrap CI",
+      "n_samples": 100,
+      "n_features": 10,
+      "time_seconds": 0.10573005676269531,
+      "memory_mb": null,
+      "throughput": 945.8048454891491
+    },
+    {
+      "operation": "Bootstrap CI",
+      "n_samples": 200,
+      "n_features": 10,
+      "time_seconds": 0.11658334732055664,
+      "memory_mb": null,
+      "throughput": 1715.5108735219412
+    },
+    {
+      "operation": "Pairwise Co-occurrence",
+      "n_samples": 50,
+      "n_features": 20,
+      "time_seconds": 0.033910274505615234,
+      "memory_mb": null,
+      "throughput": 1474.4793644097588
+    },
+    {
+      "operation": "Pairwise Co-occurrence",
+      "n_samples": 100,
+      "n_features": 30,
+      "time_seconds": 0.07785725593566895,
+      "memory_mb": null,
+      "throughput": 1284.4018042791918
+    },
+    {
+      "operation": "Pairwise Co-occurrence",
+      "n_samples": 200,
+      "n_features": 40,
+      "time_seconds": 0.1359872817993164,
+      "memory_mb": null,
+      "throughput": 1470.72577195234
+    },
+    {
+      "operation": "Association Rules",
+      "n_samples": 50,
+      "n_features": 15,
+      "time_seconds": 0.047806501388549805,
+      "memory_mb": null,
+      "throughput": 1045.8828516569833
+    },
+    {
+      "operation": "Association Rules",
+      "n_samples": 100,
+      "n_features": 15,
+      "time_seconds": 0.0489659309387207,
+      "memory_mb": null,
+      "throughput": 2042.2362667861212
+    },
+    {
+      "operation": "Association Rules",
+      "n_samples": 200,
+      "n_features": 15,
+      "time_seconds": 0.04846024513244629,
+      "memory_mb": null,
+      "throughput": 4127.094269816046
+    },
+    {
+      "operation": "Network Construction",
+      "n_samples": 20,
+      "n_features": 20,
+      "time_seconds": 0.00096893310546875,
+      "memory_mb": null,
+      "throughput": 20641.259842519685
+    },
+    {
+      "operation": "Network Construction",
+      "n_samples": 50,
+      "n_features": 50,
+      "time_seconds": 0.007445573806762695,
+      "memory_mb": null,
+      "throughput": 6715.399148227609
+    },
+    {
+      "operation": "Network Construction",
+      "n_samples": 100,
+      "n_features": 100,
+      "time_seconds": 0.041776180267333984,
+      "memory_mb": null,
+      "throughput": 2393.708552579014
+    },
+    {
+      "operation": "Full Pipeline",
+      "n_samples": 50,
+      "n_features": 20,
+      "time_seconds": 0.04709815979003906,
+      "memory_mb": null,
+      "throughput": 1061.6126027619164
+    },
+    {
+      "operation": "Full Pipeline",
+      "n_samples": 100,
+      "n_features": 20,
+      "time_seconds": 0.048964500427246094,
+      "memory_mb": null,
+      "throughput": 2042.295931285667
+    }
+  ]
+}

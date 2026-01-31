@@ -1,0 +1,178 @@
+{
+  "timestamp": "2026-01-31T10:02:24.780787",
+  "total_tests": 15,
+  "passed": 15,
+  "coverage": 100.0,
+  "results": [
+    {
+      "test": "Strain Count",
+      "expected": "\u226550 strains",
+      "actual": "91 strains",
+      "passed": true,
+      "details": "Dataset should have sufficient sample size",
+      "category": "data_integrity"
+    },
+    {
+      "test": "Binary Values",
+      "expected": "All 0 or 1",
+      "actual": "All binary",
+      "passed": true,
+      "details": "Data should be binary presence/absence",
+      "category": "data_integrity"
+    },
+    {
+      "test": "No Missing Values",
+      "expected": "No NaN/null",
+      "actual": "No missing",
+      "passed": true,
+      "details": "Data should be complete",
+      "category": "data_integrity"
+    },
+    {
+      "test": "Strain ID Consistency",
+      "expected": "\u226550 common strains",
+      "actual": "91 common strains",
+      "passed": true,
+      "details": "Strain IDs should match across files",
+      "category": "data_integrity"
+    },
+    {
+      "test": "Prevalence Range",
+      "expected": "[0%, 100%]",
+      "actual": "Min=0.0%, Max=75.8%",
+      "passed": true,
+      "details": "All prevalences within valid range",
+      "category": "statistical"
+    },
+    {
+      "test": "Tetracycline Prevalence",
+      "expected": "Calculable",
+      "actual": "72.0%",
+      "passed": true,
+      "details": "Tetracycline resistance prevalence",
+      "category": "biological"
+    },
+    {
+      "test": "Chi-Square on Real Data",
+      "expected": "Valid chi2 and p-value",
+      "actual": "chi2=0.00, p=1.0000",
+      "passed": true,
+      "details": "Testing Amoxicillin_Clavulanic_acid vs SAT-4",
+      "category": "statistical"
+    },
+    {
+      "test": "Multiple Testing Correction",
+      "expected": "FDR correction applied",
+      "actual": "0/20 significant after FDR",
+      "passed": true,
+      "details": "Benjamini-Hochberg FDR correction",
+      "category": "statistical"
+    },
+    {
+      "test": "MDR Prevalence",
+      "expected": "[0%, 100%]",
+      "actual": "53.8% (49/91)",
+      "passed": true,
+      "details": "Strains resistant to \u22653 drug classes",
+      "category": "biological"
+    },
+    {
+      "test": "Resistance Distribution",
+      "expected": "Valid statistics",
+      "actual": "Mean=2.7\u00b11.7, Max=7",
+      "passed": true,
+      "details": "Distribution of resistance counts per strain",
+      "category": "biological"
+    },
+    {
+      "test": "Gene Co-occurrence Matrix",
+      "expected": "Valid diagonal",
+      "actual": "Diagonal = column sums",
+      "passed": true,
+      "details": "Co-occurrence matrix validation",
+      "category": "statistical"
+    },
+    {
+      "test": "Phi Coefficient Range",
+      "expected": "[-1, 1]",
+      "actual": "All in range",
+      "passed": true,
+      "details": "Tested 10 gene pairs",
+      "category": "statistical"
+    },
+    {
+      "test": "Bootstrap CI Real Data",
+      "expected": "CI contains observed",
+      "actual": "[0.0%, 0.0%] contains 0.0%",
+      "passed": true,
+      "details": "Bootstrap CI for Amoxicillin_Clavulanic_acid",
+      "category": "statistical"
+    },
+    {
+      "test": "Virulence Prevalence",
+      "expected": "Valid range",
+      "actual": "Top 3:  LDH:100%,  manN:100%,  ArcD:100%",
+      "passed": true,
+      "details": "Virulence factor prevalence",
+      "category": "biological"
+    },
+    {
+      "test": "AMR-Virulence Correlation",
+      "expected": "Valid correlation",
+      "actual": "r=0.065, p=0.5375",
+      "passed": true,
+      "details": "Correlation between AMR and virulence burden",
+      "category": "biological"
+    }
+  ],
+  "biological_validations": [
+    {
+      "name": "AMR Prevalence Distribution",
+      "description": "Distribution of antimicrobial resistance prevalence across antibiotics",
+      "result": "Range: 0.0% - 75.8%, Mean: 20.5%",
+      "interpretation": "Typical S. suis populations show variable resistance rates. High prevalence (>50%) for some antibiotics suggests selective pressure."
+    },
+    {
+      "name": "Tetracycline Resistance",
+      "description": "Tetracycline resistance is commonly high in S. suis due to widespread use in pig farming",
+      "result": "Observed prevalence: 72.0%",
+      "interpretation": "Values >30% are typical for pig-associated S. suis. Lower values may indicate recent antibiotic stewardship."
+    },
+    {
+      "name": "Genotype-Phenotype Associations",
+      "description": "Statistical associations between resistance phenotypes and AMR genes",
+      "result": "0 significant associations found (FDR < 0.05)",
+      "interpretation": "Significant associations suggest functional relationships between genes and phenotypes. Expected for well-characterized resistance mechanisms."
+    },
+    {
+      "name": "Multidrug Resistance",
+      "description": "Prevalence of strains resistant to 3 or more antimicrobial classes",
+      "result": "MDR prevalence: 53.8% (49 strains)",
+      "interpretation": "MDR prevalence >30% is concerning and suggests need for antibiotic stewardship. Values vary by geographic region and farm management."
+    },
+    {
+      "name": "Resistance Burden",
+      "description": "Average number of antimicrobials each strain is resistant to",
+      "result": "Mean: 2.7 \u00b1 1.7, Range: 0-7",
+      "interpretation": "Higher mean resistance burden indicates more challenging treatment options. Compare with regional surveillance data."
+    },
+    {
+      "name": "Prevalence Confidence Interval",
+      "description": "95% bootstrap CI for Amoxicillin_Clavulanic_acid prevalence",
+      "result": "Point estimate: 0.0%, 95% CI: [0.0%, 0.0%]",
+      "interpretation": "Narrow CI indicates precise estimate. Wide CI suggests need for larger sample size."
+    },
+    {
+      "name": "Virulence Factor Distribution",
+      "description": "Prevalence of virulence factors in the strain collection",
+      "result": "Most common:  LDH:100%,  manN:100%,  ArcD:100%",
+      "interpretation": "High prevalence virulence factors may be essential for colonization. Low prevalence factors may be associated with invasive disease."
+    },
+    {
+      "name": "AMR-Virulence Relationship",
+      "description": "Correlation between antimicrobial resistance gene count and virulence factor count",
+      "result": "Pearson r = 0.065, p = 0.5375",
+      "interpretation": "Positive correlation suggests co-selection. Negative suggests trade-off. No correlation indicates independent evolution."
+    }
+  ]
+}

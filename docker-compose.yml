@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  strepsuis-mdr:
+    image: mkvet/strepsuis-mdr:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+      - ./output:/output
+    environment:
+      - DATA_DIR=/data
+      - OUTPUT_DIR=/output
+    command: ["--data-dir", "/data", "--output", "/output"]

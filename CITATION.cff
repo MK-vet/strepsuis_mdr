@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+type: software
+title: "StrepSuisMDR: Automated Detection of Antimicrobial Resistance Patterns"
+version: 1.0.0
+date-released: 2025-01-15
+doi: "10.5281/zenodo.XXXXXXX"
+abstract: >-
+  StrepSuisMDR is a Python package for automated detection and analysis
+  of antimicrobial resistance patterns in Streptococcus suis and other
+  bacterial species. It implements bootstrap confidence intervals,
+  multiple testing correction, association rule mining, and network-based
+  visualization of co-resistance relationships.
+keywords:
+  - antimicrobial resistance
+  - bioinformatics
+  - genomics
+  - streptococcus suis
+  - MDR analysis
+  - statistical analysis
+  - network analysis
+license: MIT
+authors:
+  - family-names: "MK-vet"
+    affiliation: "StrepSuis Suite Development Team"
+repository-code: "https://github.com/MK-vet/MKrep"
+url: "https://github.com/MK-vet/MKrep"
+preferred-citation:
+  type: software
+  title: "StrepSuisMDR: Automated Detection of Antimicrobial Resistance Patterns"
+  authors:
+    - family-names: "MK-vet"
+      affiliation: "StrepSuis Suite Development Team"
+  version: 1.0.0
+  date-released: 2025-01-15
+  repository-code: "https://github.com/MK-vet/MKrep"
+references:
+  - type: article
+    title: "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing"
+    authors:
+      - family-names: "Benjamini"
+        given-names: "Yoav"
+      - family-names: "Hochberg"
+        given-names: "Yosef"
+    journal: "Journal of the Royal Statistical Society: Series B"
+    volume: 57
+    issue: 1
+    pages: "289-300"
+    year: 1995
+  - type: book
+    title: "An Introduction to the Bootstrap"
+    authors:
+      - family-names: "Efron"
+        given-names: "Bradley"
+      - family-names: "Tibshirani"
+        given-names: "Robert J."
+    publisher: "Chapman & Hall"
+    year: 1993

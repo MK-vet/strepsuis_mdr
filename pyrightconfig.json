@@ -1,0 +1,23 @@
+{
+  "include": [
+    "strepsuis_mdr"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/node_modules",
+    "**/.git"
+  ],
+  "reportMissingImports": false,
+  "reportMissingTypeStubs": false,
+  "reportUnusedImport": true,
+  "reportUnusedClass": true,
+  "reportUnusedFunction": true,
+  "reportUnusedVariable": true,
+  "pythonVersion": "3.8",
+  "typeCheckingMode": "basic",
+  "stubPath": "",
+  "venvPath": ".",
+  "venv": ".venv"
+}
+
+

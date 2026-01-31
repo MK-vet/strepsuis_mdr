@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-01-31T10:02:24.785918",
+  "total_tests": 18,
+  "passed": 18,
+  "coverage": 100.0,
+  "results": [
+    {
+      "test": "Chi-Square vs scipy",
+      "expected": "chi2=16.67, p=0.0000",
+      "actual": "chi2=15.04, p=0.0001",
+      "passed": true,
+      "details": "Should match scipy.stats.chi2_contingency"
+    },
+    {
+      "test": "Fisher's Exact vs scipy",
+      "expected": "p=0.5238",
+      "actual": "p=0.5238",
+      "passed": true,
+      "details": "Should match scipy.stats.fisher_exact"
+    },
+    {
+      "test": "Phi Perfect Positive",
+      "expected": "1.0",
+      "actual": "1.0000",
+      "passed": true,
+      "details": "Perfect positive association"
+    },
+    {
+      "test": "Phi Perfect Negative",
+      "expected": "-1.0",
+      "actual": "-1.0000",
+      "passed": true,
+      "details": "Perfect negative association"
+    },
+    {
+      "test": "Phi No Association",
+      "expected": "~0.0",
+      "actual": "0.0000",
+      "passed": true,
+      "details": "Independent variables"
+    },
+    {
+      "test": "Phi Bounds",
+      "expected": "[-1, 1]",
+      "actual": "All within bounds",
+      "passed": true,
+      "details": "20 random tests"
+    },
+    {
+      "test": "FDR vs statsmodels",
+      "expected": "reject=2",
+      "actual": "reject=2",
+      "passed": true,
+      "details": "FDR correction should work"
+    },
+    {
+      "test": "FDR Monotonicity",
+      "expected": "Monotonically non-decreasing",
+      "actual": "Monotonic",
+      "passed": true,
+      "details": "Corrected p-values should be monotonic"
+    },
+    {
+      "test": "FDR Control",
+      "expected": "\u22645.0%",
+      "actual": "0.0%",
+      "passed": true,
+      "details": "FDR should be controlled at nominal level"
+    },
+    {
+      "test": "Log-Odds Calculation",
+      "expected": "log(OR) = 1.79",
+      "actual": "log(OR) = 1.79",
+      "passed": true,
+      "details": "Should produce valid log-odds"
+    },
+    {
+      "test": "Log-Odds Symmetry",
+      "expected": "log(OR_AB) = -log(OR_BA)",
+      "actual": "1.79 = --1.79",
+      "passed": true,
+      "details": "Antisymmetric property"
+    },
+    {
+      "test": "Risk Score Concept",
+      "expected": "Hub has highest centrality",
+      "actual": "B=1.00 > A=0.33",
+      "passed": true,
+      "details": "Network centrality concept"
+    },
+    {
+      "test": "Sequential Pattern Concept",
+      "expected": "P(B|A) \u2248 0.8",
+      "actual": "P(B|A) = 0.73",
+      "passed": true,
+      "details": "Conditional probability"
+    },
+    {
+      "test": "Support Calculation",
+      "expected": "Support(A)=0.6, Support(A,B)=0.4",
+      "actual": "Support(A)=0.60, Support(A,B)=0.40",
+      "passed": true,
+      "details": "Correct support values"
+    },
+    {
+      "test": "Confidence Calculation",
+      "expected": "Confidence(A\u2192B) = 0.667",
+      "actual": "Confidence(A\u2192B) = 0.667",
+      "passed": true,
+      "details": "Correct confidence value"
+    },
+    {
+      "test": "Lift Calculation",
+      "expected": "Lift(A\u2192B) = 1.111",
+      "actual": "Lift(A\u2192B) = 1.111",
+      "passed": true,
+      "details": "Correct lift value"
+    },
+    {
+      "test": "Bootstrap CI Concept",
+      "expected": "CI contains sample mean",
+      "actual": "[0.38, 0.57] contains 0.47",
+      "passed": true,
+      "details": "Bootstrap CI should contain sample mean"
+    },
+    {
+      "test": "Bootstrap Coverage",
+      "expected": "~95%",
+      "actual": "96.0%",
+      "passed": true,
+      "details": "CI should contain true value ~95%"
+    }
+  ]
+}

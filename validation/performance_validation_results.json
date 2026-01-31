@@ -1,0 +1,297 @@
+{
+  "timestamp": "2026-01-31T10:02:24.782470",
+  "benchmarks": [
+    {
+      "name": "Bootstrap CI (n=50)",
+      "operation": "bootstrap_ci",
+      "data_size": "50 samples",
+      "time_ms": 41.38,
+      "throughput": "24.2 iter/s",
+      "memory_mb": 0.05
+    },
+    {
+      "name": "Bootstrap CI (n=100)",
+      "operation": "bootstrap_ci",
+      "data_size": "100 samples",
+      "time_ms": 41.44,
+      "throughput": "24.1 iter/s",
+      "memory_mb": 0.05
+    },
+    {
+      "name": "Bootstrap CI (n=200)",
+      "operation": "bootstrap_ci",
+      "data_size": "200 samples",
+      "time_ms": 42.83,
+      "throughput": "23.3 iter/s",
+      "memory_mb": 0.05
+    },
+    {
+      "name": "Bootstrap CI (n=500)",
+      "operation": "bootstrap_ci",
+      "data_size": "500 samples",
+      "time_ms": 59.78,
+      "throughput": "16.7 iter/s",
+      "memory_mb": 0.05
+    },
+    {
+      "name": "Pairwise Chi-Square (f=10)",
+      "operation": "pairwise_chi_square",
+      "data_size": "45 pairs",
+      "time_ms": 337.46,
+      "throughput": "133 pairs/s",
+      "memory_mb": 0.08
+    },
+    {
+      "name": "Pairwise Chi-Square (f=20)",
+      "operation": "pairwise_chi_square",
+      "data_size": "190 pairs",
+      "time_ms": 1523.61,
+      "throughput": "125 pairs/s",
+      "memory_mb": 0.09
+    },
+    {
+      "name": "Pairwise Chi-Square (f=50)",
+      "operation": "pairwise_chi_square",
+      "data_size": "1225 pairs",
+      "time_ms": 7071.03,
+      "throughput": "173 pairs/s",
+      "memory_mb": 0.23
+    },
+    {
+      "name": "Pairwise Chi-Square (f=100)",
+      "operation": "pairwise_chi_square",
+      "data_size": "4950 pairs",
+      "time_ms": 21985.5,
+      "throughput": "225 pairs/s",
+      "memory_mb": 0.71
+    },
+    {
+      "name": "Co-occurrence Matrix (n=50)",
+      "operation": "cooccurrence_matrix",
+      "data_size": "50x30",
+      "time_ms": 0.04,
+      "throughput": "34803 elem/ms",
+      "memory_mb": 0.0
+    },
+    {
+      "name": "Co-occurrence Matrix (n=100)",
+      "operation": "cooccurrence_matrix",
+      "data_size": "100x30",
+      "time_ms": 0.04,
+      "throughput": "75949 elem/ms",
+      "memory_mb": 0.0
+    },
+    {
+      "name": "Co-occurrence Matrix (n=200)",
+      "operation": "cooccurrence_matrix",
+      "data_size": "200x30",
+      "time_ms": 0.07,
+      "throughput": "91047 elem/ms",
+      "memory_mb": 0.0
+    },
+    {
+      "name": "Co-occurrence Matrix (n=500)",
+      "operation": "cooccurrence_matrix",
+      "data_size": "500x30",
+      "time_ms": 0.17,
+      "throughput": "86207 elem/ms",
+      "memory_mb": 0.0
+    },
+    {
+      "name": "MDR Prevalence (n=100)",
+      "operation": "mdr_prevalence",
+      "data_size": "100 strains",
+      "time_ms": 0.03,
+      "throughput": "2941 strains/ms",
+      "memory_mb": 0.01
+    },
+    {
+      "name": "MDR Prevalence (n=500)",
+      "operation": "mdr_prevalence",
+      "data_size": "500 strains",
+      "time_ms": 0.02,
+      "throughput": "25126 strains/ms",
+      "memory_mb": 0.05
+    },
+    {
+      "name": "MDR Prevalence (n=1000)",
+      "operation": "mdr_prevalence",
+      "data_size": "1000 strains",
+      "time_ms": 0.03,
+      "throughput": "32680 strains/ms",
+      "memory_mb": 0.07
+    },
+    {
+      "name": "MDR Prevalence (n=2000)",
+      "operation": "mdr_prevalence",
+      "data_size": "2000 strains",
+      "time_ms": 0.03,
+      "throughput": "62696 strains/ms",
+      "memory_mb": 0.08
+    },
+    {
+      "name": "FDR Correction (n=100)",
+      "operation": "fdr_correction",
+      "data_size": "100 tests",
+      "time_ms": 0.11,
+      "throughput": "909 tests/ms",
+      "memory_mb": 0.01
+    },
+    {
+      "name": "FDR Correction (n=500)",
+      "operation": "fdr_correction",
+      "data_size": "500 tests",
+      "time_ms": 0.07,
+      "throughput": "6793 tests/ms",
+      "memory_mb": 0.02
+    },
+    {
+      "name": "FDR Correction (n=1000)",
+      "operation": "fdr_correction",
+      "data_size": "1000 tests",
+      "time_ms": 0.08,
+      "throughput": "12594 tests/ms",
+      "memory_mb": 0.04
+    },
+    {
+      "name": "FDR Correction (n=5000)",
+      "operation": "fdr_correction",
+      "data_size": "5000 tests",
+      "time_ms": 0.16,
+      "throughput": "31270 tests/ms",
+      "memory_mb": 0.2
+    }
+  ],
+  "scalability_tests": [
+    {
+      "operation": "Bootstrap CI",
+      "sizes": [
+        50,
+        100,
+        200,
+        500
+      ],
+      "times_ms": [
+        41.38,
+        41.44,
+        42.83,
+        59.78
+      ],
+      "memory_mb": [
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "complexity": "O(n\u00b2)"
+    },
+    {
+      "operation": "Pairwise Chi-Square",
+      "sizes": [
+        10,
+        20,
+        50,
+        100
+      ],
+      "times_ms": [
+        337.46,
+        1523.61,
+        7071.03,
+        21985.5
+      ],
+      "memory_mb": [
+        0.08,
+        0.09,
+        0.23,
+        0.71
+      ],
+      "complexity": "O(n\u00b2)"
+    },
+    {
+      "operation": "Co-occurrence Matrix",
+      "sizes": [
+        50,
+        100,
+        200,
+        500
+      ],
+      "times_ms": [
+        0.04,
+        0.04,
+        0.07,
+        0.17
+      ],
+      "memory_mb": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complexity": "O(n\u00b2)"
+    },
+    {
+      "operation": "MDR Prevalence",
+      "sizes": [
+        100,
+        500,
+        1000,
+        2000
+      ],
+      "times_ms": [
+        0.03,
+        0.02,
+        0.03,
+        0.03
+      ],
+      "memory_mb": [
+        0.01,
+        0.05,
+        0.07,
+        0.08
+      ],
+      "complexity": "O(n\u00b2)"
+    },
+    {
+      "operation": "FDR Correction",
+      "sizes": [
+        100,
+        500,
+        1000,
+        5000
+      ],
+      "times_ms": [
+        0.11,
+        0.07,
+        0.08,
+        0.16
+      ],
+      "memory_mb": [
+        0.01,
+        0.02,
+        0.04,
+        0.2
+      ],
+      "complexity": "O(n\u00b2)"
+    }
+  ],
+  "optimizations": [
+    {
+      "name": "Bootstrap Vectorization",
+      "before_ms": 1.76,
+      "after_ms": 0.26,
+      "improvement_pct": 85.0
+    },
+    {
+      "name": "dtype int64 -> int8",
+      "before_ms": 0.76,
+      "after_ms": 0.1,
+      "improvement_pct": 87.5
+    },
+    {
+      "name": "Dense -> Sparse (10% prevalence)",
+      "before_ms": 0.38,
+      "after_ms": 0.08,
+      "improvement_pct": 78.6
+    }
+  ]
+}

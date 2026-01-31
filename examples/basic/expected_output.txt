@@ -1,0 +1,19 @@
+Expected Analysis Results:
+
+This basic example should complete in 1-2 minutes and produce:
+
+1. HTML Report with:
+   - Summary statistics
+   - Feature prevalence tables
+   - Interactive visualizations
+
+2. Excel Report with:
+   - Summary sheet
+   - Detailed results sheet
+   - Methodology sheet
+
+3. PNG Charts (in png_charts/ subdirectory):
+   - High-resolution visualizations (150+ DPI)
+   - Ready for publication
+
+You should see output files in your specified output directory.

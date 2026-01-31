@@ -1,0 +1,36 @@
+[MASTER]
+ignore=CVS
+extension-pkg-whitelist=pylint.extensions.check_docs
+
+[MESSAGES CONTROL]
+disable=import-error,no-member,missing-module-docstring,missing-class-docstring,missing-function-docstring
+
+[IMPORTS]
+# List of modules that can be imported at any level, not just the top level one.
+allow-any-import-level=
+
+# Allow wildcard imports from modules that define __all__.
+allow-wildcard-with-all=no
+
+# Analyse import fallback blocks. This can be used to support both Python 2 and
+# 3 compatible code, which means that the block might have code that exists
+# only in one or the other interpreter, leading to false positives when analysed.
+analyse-fallback-blocks=no
+
+# Ignore import statements themselves when they appear to be unused.
+ignore-imports=no
+
+# Tells whether missing members accessed in mixin class should be ignored. A
+# mixin class is detected if its name ends with "mixin" (case insensitive).
+ignore-mixin-members=yes
+
+# Tells whether to warn about deprecated members when they are imported.
+deprecated-modules=
+
+# Additional modules to be considered as dependencies.
+known-modules=pandas,numpy,scipy,networkx,plotly,statsmodels,mlxtend,matplotlib,seaborn,sklearn,biopython,openpyxl,xlsxwriter,kaleido,tqdm,joblib,jinja2,pydantic
+
+# Ignore import errors for these modules.
+ignored-modules=google.colab
+
+

@@ -1,0 +1,564 @@
+{
+  "clean_dataset": {
+    "description": "Perfect data with no noise",
+    "n_strains": 200,
+    "n_features": 23,
+    "statistics": {
+      "Feature_00": {
+        "mean": 0.095,
+        "std": 0.293214938227915,
+        "prevalence": 0.095,
+        "n_positive": 19,
+        "n_negative": 181,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_01": {
+        "mean": 0.13,
+        "std": 0.33630343441600474,
+        "prevalence": 0.13,
+        "n_positive": 26,
+        "n_negative": 174,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_02": {
+        "mean": 0.235,
+        "std": 0.4239988207530771,
+        "prevalence": 0.235,
+        "n_positive": 47,
+        "n_negative": 153,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_03": {
+        "mean": 0.2,
+        "std": 0.4,
+        "prevalence": 0.2,
+        "n_positive": 40,
+        "n_negative": 160,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_04": {
+        "mean": 0.22,
+        "std": 0.41424630354415964,
+        "prevalence": 0.22,
+        "n_positive": 44,
+        "n_negative": 156,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_05": {
+        "mean": 0.395,
+        "std": 0.48885069295235745,
+        "prevalence": 0.395,
+        "n_positive": 79,
+        "n_negative": 121,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_06": {
+        "mean": 0.355,
+        "std": 0.47851332269854296,
+        "prevalence": 0.355,
+        "n_positive": 71,
+        "n_negative": 129,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_07": {
+        "mean": 0.415,
+        "std": 0.4927220311697053,
+        "prevalence": 0.415,
+        "n_positive": 83,
+        "n_negative": 117,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_08": {
+        "mean": 0.395,
+        "std": 0.4888506929523574,
+        "prevalence": 0.395,
+        "n_positive": 79,
+        "n_negative": 121,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_09": {
+        "mean": 0.51,
+        "std": 0.4998999899979995,
+        "prevalence": 0.51,
+        "n_positive": 102,
+        "n_negative": 98,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_10": {
+        "mean": 0.5,
+        "std": 0.5,
+        "prevalence": 0.5,
+        "n_positive": 100,
+        "n_negative": 100,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_11": {
+        "mean": 0.555,
+        "std": 0.4969657935914705,
+        "prevalence": 0.555,
+        "n_positive": 111,
+        "n_negative": 89,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_12": {
+        "mean": 0.615,
+        "std": 0.4865953144040744,
+        "prevalence": 0.615,
+        "n_positive": 123,
+        "n_negative": 77,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_13": {
+        "mean": 0.66,
+        "std": 0.4737087712930805,
+        "prevalence": 0.66,
+        "n_positive": 132,
+        "n_negative": 68,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_14": {
+        "mean": 0.615,
+        "std": 0.4865953144040744,
+        "prevalence": 0.615,
+        "n_positive": 123,
+        "n_negative": 77,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_15": {
+        "mean": 0.76,
+        "std": 0.4270831300812525,
+        "prevalence": 0.76,
+        "n_positive": 152,
+        "n_negative": 48,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_16": {
+        "mean": 0.805,
+        "std": 0.3962007067131506,
+        "prevalence": 0.805,
+        "n_positive": 161,
+        "n_negative": 39,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_17": {
+        "mean": 0.81,
+        "std": 0.39230090491866065,
+        "prevalence": 0.81,
+        "n_positive": 162,
+        "n_negative": 38,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_18": {
+        "mean": 0.87,
+        "std": 0.33630343441600474,
+        "prevalence": 0.87,
+        "n_positive": 174,
+        "n_negative": 26,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_19": {
+        "mean": 0.895,
+        "std": 0.3065534211193866,
+        "prevalence": 0.895,
+        "n_positive": 179,
+        "n_negative": 21,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Corr_A": {
+        "mean": 0.395,
+        "std": 0.48885069295235745,
+        "prevalence": 0.395,
+        "n_positive": 79,
+        "n_negative": 121,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Corr_B": {
+        "mean": 0.605,
+        "std": 0.48885069295235745,
+        "prevalence": 0.605,
+        "n_positive": 121,
+        "n_negative": 79,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Mod_Corr_A": {
+        "mean": 0.54,
+        "std": 0.49839743177508444,
+        "prevalence": 0.54,
+        "n_positive": 108,
+        "n_negative": 92,
+        "is_constant": false,
+        "is_binary": true
+      }
+    }
+  },
+  "noisy_dataset": {
+    "description": "Realistic noise (10% random flips)",
+    "n_strains": 200,
+    "n_features": 23,
+    "noise_rate": 0.1,
+    "statistics": {
+      "Feature_00": {
+        "mean": 0.195,
+        "std": 0.3962007067131506,
+        "prevalence": 0.195,
+        "n_positive": 39,
+        "n_negative": 161,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_01": {
+        "mean": 0.22,
+        "std": 0.41424630354415964,
+        "prevalence": 0.22,
+        "n_positive": 44,
+        "n_negative": 156,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_02": {
+        "mean": 0.285,
+        "std": 0.4514144437210666,
+        "prevalence": 0.285,
+        "n_positive": 57,
+        "n_negative": 143,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_03": {
+        "mean": 0.24,
+        "std": 0.4270831300812524,
+        "prevalence": 0.24,
+        "n_positive": 48,
+        "n_negative": 152,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_04": {
+        "mean": 0.27,
+        "std": 0.4439594576084623,
+        "prevalence": 0.27,
+        "n_positive": 54,
+        "n_negative": 146,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_05": {
+        "mean": 0.435,
+        "std": 0.4957569969249047,
+        "prevalence": 0.435,
+        "n_positive": 87,
+        "n_negative": 113,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_06": {
+        "mean": 0.395,
+        "std": 0.4888506929523574,
+        "prevalence": 0.395,
+        "n_positive": 79,
+        "n_negative": 121,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_07": {
+        "mean": 0.435,
+        "std": 0.4957569969249047,
+        "prevalence": 0.435,
+        "n_positive": 87,
+        "n_negative": 113,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_08": {
+        "mean": 0.425,
+        "std": 0.4943429983321297,
+        "prevalence": 0.425,
+        "n_positive": 85,
+        "n_negative": 115,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_09": {
+        "mean": 0.52,
+        "std": 0.4995998398718719,
+        "prevalence": 0.52,
+        "n_positive": 104,
+        "n_negative": 96,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_10": {
+        "mean": 0.51,
+        "std": 0.4998999899979995,
+        "prevalence": 0.51,
+        "n_positive": 102,
+        "n_negative": 98,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_11": {
+        "mean": 0.515,
+        "std": 0.4997749493522059,
+        "prevalence": 0.515,
+        "n_positive": 103,
+        "n_negative": 97,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_12": {
+        "mean": 0.585,
+        "std": 0.49272203116970525,
+        "prevalence": 0.585,
+        "n_positive": 117,
+        "n_negative": 83,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_13": {
+        "mean": 0.61,
+        "std": 0.4877499359302879,
+        "prevalence": 0.61,
+        "n_positive": 122,
+        "n_negative": 78,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_14": {
+        "mean": 0.625,
+        "std": 0.4841229182759271,
+        "prevalence": 0.625,
+        "n_positive": 125,
+        "n_negative": 75,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_15": {
+        "mean": 0.71,
+        "std": 0.45376205218153715,
+        "prevalence": 0.71,
+        "n_positive": 142,
+        "n_negative": 58,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_16": {
+        "mean": 0.715,
+        "std": 0.4514144437210666,
+        "prevalence": 0.715,
+        "n_positive": 143,
+        "n_negative": 57,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_17": {
+        "mean": 0.73,
+        "std": 0.4439594576084622,
+        "prevalence": 0.73,
+        "n_positive": 146,
+        "n_negative": 54,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_18": {
+        "mean": 0.81,
+        "std": 0.39230090491866065,
+        "prevalence": 0.81,
+        "n_positive": 162,
+        "n_negative": 38,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Feature_19": {
+        "mean": 0.795,
+        "std": 0.403701622488689,
+        "prevalence": 0.795,
+        "n_positive": 159,
+        "n_negative": 41,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Corr_A": {
+        "mean": 0.435,
+        "std": 0.4957569969249047,
+        "prevalence": 0.435,
+        "n_positive": 87,
+        "n_negative": 113,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Corr_B": {
+        "mean": 0.595,
+        "std": 0.4908920451586072,
+        "prevalence": 0.595,
+        "n_positive": 119,
+        "n_negative": 81,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Mod_Corr_A": {
+        "mean": 0.54,
+        "std": 0.49839743177508444,
+        "prevalence": 0.54,
+        "n_positive": 108,
+        "n_negative": 92,
+        "is_constant": false,
+        "is_binary": true
+      }
+    }
+  },
+  "adversarial_dataset": {
+    "description": "Edge cases (zeros, ones, constants, etc.)",
+    "n_strains": 200,
+    "n_features": 14,
+    "statistics": {
+      "All_Zeros": {
+        "mean": 0.0,
+        "std": 0.0,
+        "prevalence": 0.0,
+        "n_positive": 0,
+        "n_negative": 200,
+        "is_constant": true,
+        "is_binary": true
+      },
+      "All_Ones": {
+        "mean": 1.0,
+        "std": 0.0,
+        "prevalence": 1.0,
+        "n_positive": 200,
+        "n_negative": 0,
+        "is_constant": true,
+        "is_binary": true
+      },
+      "Single_Positive": {
+        "mean": 0.005,
+        "std": 0.07053367989832945,
+        "prevalence": 0.005,
+        "n_positive": 1,
+        "n_negative": 199,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Single_Negative": {
+        "mean": 0.995,
+        "std": 0.07053367989832945,
+        "prevalence": 0.995,
+        "n_positive": 199,
+        "n_negative": 1,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Nearly_Zero": {
+        "mean": 0.005,
+        "std": 0.07053367989832945,
+        "prevalence": 0.005,
+        "n_positive": 1,
+        "n_negative": 199,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Nearly_One": {
+        "mean": 0.995,
+        "std": 0.07053367989832945,
+        "prevalence": 0.995,
+        "n_positive": 199,
+        "n_negative": 1,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Pos_A": {
+        "mean": 0.49,
+        "std": 0.4998999899979995,
+        "prevalence": 0.49,
+        "n_positive": 98,
+        "n_negative": 102,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Pos_B": {
+        "mean": 0.49,
+        "std": 0.4998999899979995,
+        "prevalence": 0.49,
+        "n_positive": 98,
+        "n_negative": 102,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Neg_A": {
+        "mean": 0.51,
+        "std": 0.4998999899979995,
+        "prevalence": 0.51,
+        "n_positive": 102,
+        "n_negative": 98,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Perfect_Neg_B": {
+        "mean": 0.49,
+        "std": 0.4998999899979995,
+        "prevalence": 0.49,
+        "n_positive": 98,
+        "n_negative": 102,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Moderate_50": {
+        "mean": 0.565,
+        "std": 0.4957569969249047,
+        "prevalence": 0.565,
+        "n_positive": 113,
+        "n_negative": 87,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Moderate_25": {
+        "mean": 0.24,
+        "std": 0.4270831300812525,
+        "prevalence": 0.24,
+        "n_positive": 48,
+        "n_negative": 152,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Moderate_75": {
+        "mean": 0.77,
+        "std": 0.4208325082500163,
+        "prevalence": 0.77,
+        "n_positive": 154,
+        "n_negative": 46,
+        "is_constant": false,
+        "is_binary": true
+      },
+      "Alternating": {
+        "mean": 0.5,
+        "std": 0.5,
+        "prevalence": 0.5,
+        "n_positive": 100,
+        "n_negative": 100,
+        "is_constant": false,
+        "is_binary": true
+      }
+    }
+  }
+}
