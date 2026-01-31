@@ -25,7 +25,7 @@
   "related_identifiers": [
     {
       "scheme": "url",
-      "identifier": "https://github.com/MK-vet/MKrep",
+      "identifier": "https://github.com/MK-vet/strepsuis_mdr",
       "relation": "isSupplementTo",
       "resource_type": "software"
     }
