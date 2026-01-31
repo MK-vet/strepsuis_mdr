@@ -121,7 +121,7 @@ class DataBackend:
         """Load cache metadata from disk."""
         metadata_file = self.cache_dir / "cache_metadata.json"
         if metadata_file.exists():
-            with open(metadata_file, 'r') as f:
+            with open(metadata_file, 'r', encoding='utf-8') as f:
                 return json.load(f)
         return {}
 
