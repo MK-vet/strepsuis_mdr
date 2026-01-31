@@ -42,6 +42,19 @@ from .generate_synthetic_data import (
     validate_synthetic_data,
 )
 
+# High-performance data backend (Parquet + DuckDB)
+from .data_backend import DataBackend, load_data_efficient, get_backend_status
+
+# Uncertainty quantification (Bootstrap CI + Permutation tests)
+from .uncertainty import UncertaintyQuantifier, apply_default_uncertainty
+
+# Parallel network analysis (Community detection with consensus)
+from .parallel_network import (
+    parallel_community_detection,
+    compute_parallel_modularity,
+    export_community_dataframe,
+)
+
 # Advanced statistical features from shared module
 try:
     from shared.advanced_statistics import (
@@ -70,6 +83,14 @@ __all__ = [
     "generate_mdr_synthetic_dataset",
     "save_synthetic_data",
     "validate_synthetic_data",
+    "DataBackend",
+    "load_data_efficient",
+    "get_backend_status",
+    "UncertaintyQuantifier",
+    "apply_default_uncertainty",
+    "parallel_community_detection",
+    "compute_parallel_modularity",
+    "export_community_dataframe",
     "__version__",
 ]
 

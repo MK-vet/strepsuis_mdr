@@ -113,3 +113,8 @@ tests/reports/math_validation/*
 tests/reports/*.html
 tests/reports/*.xml
 tests/reports/*.json
+.data_cache/
+
+# Validation outputs (auto-generated)
+validation/*.json
+validation/*REPORT.md
